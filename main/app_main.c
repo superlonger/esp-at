@@ -23,11 +23,14 @@
  */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_system.h"
 #include "nvs_flash.h"
+#include "freertos/queue.h"
+#include "driver/gpio.h"
 
 #ifdef CONFIG_AT_WIFI_COMMAND_SUPPORT
 #include "esp_event.h"
