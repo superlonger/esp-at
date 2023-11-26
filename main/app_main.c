@@ -52,10 +52,10 @@ static void gpio_task_example(void* arg)
     for(;;) {
         //printf("turn off led0!\r\n");
         gpio_set_level(GPIO_OUTPUT_IO_0, 0);
-        vTaskDelay(1000 / portTICK_RATE_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
         //printf("turn on led0!\r\n");
         gpio_set_level(GPIO_OUTPUT_IO_0, 1);
-        vTaskDelay(1000 / portTICK_RATE_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
 
